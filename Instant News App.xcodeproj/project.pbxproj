@@ -14,6 +14,14 @@
 		DA2D224626EE458D008E50FB /* Instant_News_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2D224426EE458D008E50FB /* Instant_News_App.xcdatamodeld */; };
 		DA2D224826EE458E008E50FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2D224726EE458E008E50FB /* Assets.xcassets */; };
 		DA2D224B26EE458E008E50FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2D224926EE458E008E50FB /* LaunchScreen.storyboard */; };
+		DA2D225326EE4DC0008E50FB /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D225226EE4DC0008E50FB /* FeedVC.swift */; };
+		DA2D225526EE4DD4008E50FB /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D225426EE4DD4008E50FB /* CityVC.swift */; };
+		DA2D225726EE4DEF008E50FB /* NewsAddingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D225626EE4DEF008E50FB /* NewsAddingVC.swift */; };
+		DA2D225926EE4E14008E50FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D225826EE4E14008E50FB /* TableViewCell.swift */; };
+		DA2D225E26EE54B8008E50FB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D225D26EE54B8008E50FB /* City.swift */; };
+		DA2D226226EE558A008E50FB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D226126EE558A008E50FB /* WebService.swift */; };
+		DA2D226426EE5815008E50FB /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D226326EE5815008E50FB /* CityViewModel.swift */; };
+		DA2D226626EE5CA2008E50FB /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D226526EE5CA2008E50FB /* CityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		DA2D224726EE458E008E50FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2D224A26EE458E008E50FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2D224C26EE458E008E50FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2D225226EE4DC0008E50FB /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		DA2D225426EE4DD4008E50FB /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
+		DA2D225626EE4DEF008E50FB /* NewsAddingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAddingVC.swift; sourceTree = "<group>"; };
+		DA2D225826EE4E14008E50FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DA2D225D26EE54B8008E50FB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		DA2D226126EE558A008E50FB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		DA2D226326EE5815008E50FB /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		DA2D226526EE5CA2008E50FB /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +74,10 @@
 		DA2D223A26EE458D008E50FB /* Instant News App */ = {
 			isa = PBXGroup;
 			children = (
-				DA2D223B26EE458D008E50FB /* AppDelegate.swift */,
-				DA2D223D26EE458D008E50FB /* SceneDelegate.swift */,
-				DA2D223F26EE458D008E50FB /* ViewController.swift */,
+				DA2D226026EE5559008E50FB /* Service */,
+				DA2D225F26EE5552008E50FB /* ViewModel */,
+				DA2D225C26EE543F008E50FB /* View */,
+				DA2D225A26EE5423008E50FB /* Model */,
 				DA2D224126EE458D008E50FB /* Main.storyboard */,
 				DA2D224726EE458E008E50FB /* Assets.xcassets */,
 				DA2D224926EE458E008E50FB /* LaunchScreen.storyboard */,
@@ -68,6 +85,45 @@
 				DA2D224426EE458D008E50FB /* Instant_News_App.xcdatamodeld */,
 			);
 			path = "Instant News App";
+			sourceTree = "<group>";
+		};
+		DA2D225A26EE5423008E50FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D225D26EE54B8008E50FB /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA2D225C26EE543F008E50FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D225826EE4E14008E50FB /* TableViewCell.swift */,
+				DA2D225626EE4DEF008E50FB /* NewsAddingVC.swift */,
+				DA2D225426EE4DD4008E50FB /* CityVC.swift */,
+				DA2D223B26EE458D008E50FB /* AppDelegate.swift */,
+				DA2D223D26EE458D008E50FB /* SceneDelegate.swift */,
+				DA2D223F26EE458D008E50FB /* ViewController.swift */,
+				DA2D225226EE4DC0008E50FB /* FeedVC.swift */,
+				DA2D226526EE5CA2008E50FB /* CityCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA2D225F26EE5552008E50FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D226326EE5815008E50FB /* CityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA2D226026EE5559008E50FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D226126EE558A008E50FB /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +197,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2D224026EE458D008E50FB /* ViewController.swift in Sources */,
+				DA2D226426EE5815008E50FB /* CityViewModel.swift in Sources */,
+				DA2D226626EE5CA2008E50FB /* CityCell.swift in Sources */,
+				DA2D225926EE4E14008E50FB /* TableViewCell.swift in Sources */,
+				DA2D225E26EE54B8008E50FB /* City.swift in Sources */,
 				DA2D223C26EE458D008E50FB /* AppDelegate.swift in Sources */,
+				DA2D225326EE4DC0008E50FB /* FeedVC.swift in Sources */,
+				DA2D225526EE4DD4008E50FB /* CityVC.swift in Sources */,
+				DA2D226226EE558A008E50FB /* WebService.swift in Sources */,
 				DA2D224626EE458D008E50FB /* Instant_News_App.xcdatamodeld in Sources */,
+				DA2D225726EE4DEF008E50FB /* NewsAddingVC.swift in Sources */,
 				DA2D223E26EE458D008E50FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
