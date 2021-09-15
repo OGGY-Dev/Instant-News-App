@@ -35,7 +35,7 @@ class CityVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func getData() {
         
-        let url = URL(string: "https://gist.githubusercontent.com/serong/9b25594a7b9d85d3c7f7/raw/9904724fdf669ad68c07ab79af84d3a881ff8859/iller.json")
+        let url = URL(string: "https://gist.githubusercontent.com/OGGY-Dev/0c00e017e4e76877fd4730051591bc4b/raw/e28a8c71e88aa844bdad7783c4c176e53d5ede55/citiesOfTurkey.json")
         WebService().downloadCity(url: url!) { city in
             if let city = city {
                 self.cityTableViewModel = CityTableViewModel(cityList: city)
@@ -57,7 +57,7 @@ class CityVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CityCell
         let singleViewModel = self.cityTableViewModel.cityAtIndexPath(index: indexPath.row)
         cell.cityLabel.text = singleViewModel.cityName
-        cell.plateNumberLabel.text = singleViewModel.plateNumber
+        cell.plateNumberLabel.text = String(singleViewModel.plateNumber)
         return cell
         
     

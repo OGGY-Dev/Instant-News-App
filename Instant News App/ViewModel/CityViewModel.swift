@@ -26,7 +26,7 @@ struct SingleCityModel {
     
     let city : City
     
-    var plateNumber : String {
+    var plateNumber : Int {
         return self.city.plateNumber
         
     }
