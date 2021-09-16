@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1DD03026F256B9005BB998 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DD02F26F256B9005BB998 /* News.swift */; };
+		DA1DD03226F2579C005BB998 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DD03126F2579C005BB998 /* NewsViewModel.swift */; };
 		DA2D223C26EE458D008E50FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D223B26EE458D008E50FB /* AppDelegate.swift */; };
 		DA2D223E26EE458D008E50FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D223D26EE458D008E50FB /* SceneDelegate.swift */; };
 		DA2D224026EE458D008E50FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D223F26EE458D008E50FB /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA1DD02F26F256B9005BB998 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		DA1DD03126F2579C005BB998 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		DA2D223826EE458D008E50FB /* Instant News App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instant News App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2D223B26EE458D008E50FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA2D223D26EE458D008E50FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2D225D26EE54B8008E50FB /* City.swift */,
+				DA1DD02F26F256B9005BB998 /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2D226326EE5815008E50FB /* CityViewModel.swift */,
+				DA1DD03126F2579C005BB998 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 				DA2D226226EE558A008E50FB /* WebService.swift in Sources */,
 				DA2D224626EE458D008E50FB /* Instant_News_App.xcdatamodeld in Sources */,
 				DA2D225726EE4DEF008E50FB /* NewsAddingVC.swift in Sources */,
+				DA1DD03226F2579C005BB998 /* NewsViewModel.swift in Sources */,
+				DA1DD03026F256B9005BB998 /* News.swift in Sources */,
 				DA2D223E26EE458D008E50FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
